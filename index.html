@@ -1,253 +1,167 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en" style=""><head>
+<html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Records - WorkforceOS</title>
+<title>PM - REPORT (June - 2026)</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        "colors": {
-                "tertiary": "#4c2e00",
-                "on-primary-fixed": "#001453",
-                "tertiary-fixed-dim": "#ffb95f",
-                "primary-fixed": "#dde1ff",
-                "on-secondary-fixed-variant": "#005236",
-                "on-tertiary": "#ffffff",
-                "surface-container-lowest": "#ffffff",
-                "on-surface": "#0b1c30",
-                "on-tertiary-fixed-variant": "#653e00",
-                "outline": "#757684",
-                "secondary-fixed": "#6ffbbe",
-                "secondary": "#006c49",
-                "surface-variant": "#d3e4fe",
-                "tertiary-fixed": "#ffddb8",
-                "surface": "#ffffff",
-                "inverse-on-surface": "#eaf1ff",
-                "inverse-primary": "#b8c4ff",
-                "surface-dim": "#cbdbf5",
-                "on-secondary-container": "#00714d",
-                "on-error": "#ffffff",
-                "secondary-fixed-dim": "#4edea3",
-                "background": "#f8f9ff",
-                "secondary-container": "#6cf8bb",
-                "on-background": "#0b1c30",
-                "outline-variant": "#c4c5d5",
-                "on-secondary-fixed": "#002113",
-                "on-tertiary-container": "#ffa929",
-                "primary": "#00288e",
-                "on-error-container": "#93000a",
-                "surface-container-highest": "#d3e4fe",
-                "on-primary": "#ffffff",
-                "surface-bright": "#f8f9ff",
-                "surface-tint": "#3755c3",
-                "on-tertiary-fixed": "#2a1700",
-                "on-primary-container": "#a8b8ff",
-                "surface-container-high": "#dce9ff",
-                "inverse-surface": "#213145",
-                "primary-container": "#1e40af",
-                "tertiary-container": "#6b4200",
-                "error-container": "#ffdad6",
-                "surface-container-low": "#eff4ff",
-                "on-surface-variant": "#444653",
-                "on-primary-fixed-variant": "#173bab",
-                "error": "#ba1a1a",
-                "primary-fixed-dim": "#b8c4ff",
-                "surface-container": "#e5eeff",
-                "on-secondary": "#ffffff",
-                "success": "#137333",
-                "success-container": "#e6f4ea",
-                "warning": "#b06000",
-                "warning-container": "#fef7e0",
-                "warning-border": "#fde293"
-        },
-        "borderRadius": {
-                "DEFAULT": "0.125rem",
-                "lg": "0.25rem",
-                "xl": "0.5rem",
-                "full": "0.75rem"
-        },
-        "spacing": {
-                "lg": "24px",
-                "sm": "8px",
-                "xs": "4px",
-                "xl": "40px",
-                "md": "16px",
-                "gutter": "24px",
-                "base": "4px",
-                "container-max": "1280px"
-        },
-        "fontFamily": {
-                "headline-lg": [
-                        "IBM Plex Sans"
-                ],
-                "label-md": [
-                        "IBM Plex Sans"
-                ],
-                "headline-sm": [
-                        "IBM Plex Sans"
-                ],
-                "headline-lg-mobile": [
-                        "IBM Plex Sans"
-                ],
-                "display-lg": [
-                        "IBM Plex Sans"
-                ],
-                "body-md": [
-                        "IBM Plex Sans"
-                ],
-                "body-lg": [
-                        "IBM Plex Sans"
-                ],
-                "headline-md": [
-                        "IBM Plex Sans"
-                ],
-                "body-sm": [
-                        "IBM Plex Sans"
-                ]
-        },
-        "fontSize": {
-                "headline-lg": [
-                        "32px",
-                        {
-                                "lineHeight": "1.25",
-                                "fontWeight": "600"
-                        }
-                ],
-                "label-md": [
-                        "12px",
-                        {
-                                "lineHeight": "1",
-                                "letterSpacing": "0.05em",
-                                "fontWeight": "600"
-                        }
-                ],
-                "headline-sm": [
-                        "20px",
-                        {
-                                "lineHeight": "1.4",
-                                "fontWeight": "500"
-                        }
-                ],
-                "headline-lg-mobile": [
-                        "28px",
-                        {
-                                "lineHeight": "1.2",
-                                "fontWeight": "600"
-                        }
-                ],
-                "display-lg": [
-                        "48px",
-                        {
-                                "lineHeight": "1.2",
-                                "letterSpacing": "-0.02em",
-                                "fontWeight": "600"
-                        }
-                ],
-                "body-md": [
-                        "16px",
-                        {
-                                "lineHeight": "1.5",
-                                "fontWeight": "400"
-                        }
-                ],
-                "body-lg": [
-                        "18px",
-                        {
-                                "lineHeight": "1.6",
-                                "fontWeight": "400"
-                        }
-                ],
-                "headline-md": [
-                        "24px",
-                        {
-                                "lineHeight": "1.3",
-                                "fontWeight": "500"
-                        }
-                ],
-                "body-sm": [
-                        "14px",
-                        {
-                                "lineHeight": "1.5",
-                                "fontWeight": "400"
-                        }
-                ]
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed-dim": "#b4c5ff",
+                      "surface-bright": "#f7f9fb",
+                      "on-primary-container": "#eeefff",
+                      "on-tertiary-fixed-variant": "#3f465c",
+                      "error-container": "#ffdad6",
+                      "primary": "#004ac6",
+                      "surface-container-low": "#f2f4f6",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed": "#dae2fd",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-fixed-dim": "#bec6e0",
+                      "on-surface-variant": "#434655",
+                      "surface": "#f7f9fb",
+                      "tertiary": "#4d556b",
+                      "on-error-container": "#93000a",
+                      "surface-variant": "#e0e3e5",
+                      "on-secondary-fixed-variant": "#38485d",
+                      "surface-dim": "#d8dadc",
+                      "on-error": "#ffffff",
+                      "inverse-surface": "#2d3133",
+                      "primary-fixed": "#dbe1ff",
+                      "secondary-fixed": "#d3e4fe",
+                      "secondary-container": "#d0e1fb",
+                      "tertiary-container": "#656d84",
+                      "on-secondary-container": "#54647a",
+                      "on-primary-fixed": "#00174b",
+                      "on-background": "#191c1e",
+                      "on-secondary-fixed": "#0b1c30",
+                      "surface-container-high": "#e6e8ea",
+                      "secondary-fixed-dim": "#b7c8e1",
+                      "on-surface": "#191c1e",
+                      "secondary": "#505f76",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "background": "#f7f9fb",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-tint": "#0053db",
+                      "on-tertiary-fixed": "#131b2e",
+                      "inverse-primary": "#b4c5ff",
+                      "primary-container": "#2563eb",
+                      "error": "#ba1a1a",
+                      "surface-container": "#eceef0",
+                      "on-tertiary-container": "#eef0ff",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-primary": "#ffffff",
+                      "outline": "#737686",
+                      "inverse-on-surface": "#eff1f3",
+                      "outline-variant": "#c3c6d7"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sm": "8px",
+                      "base": "4px",
+                      "gutter": "24px",
+                      "margin-mobile": "16px",
+                      "md": "16px",
+                      "lg": "24px",
+                      "xs": "4px",
+                      "margin-desktop": "32px",
+                      "xl": "32px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "label-lg": ["Inter"],
+                      "display-lg": ["Inter"],
+                      "code-md": ["JetBrains Mono"],
+                      "title-md": ["Inter"],
+                      "body-md": ["Inter"],
+                      "title-lg": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "label-md": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "headline-lg-mobile": ["Inter"]
+              },
+              "fontSize": {
+                      "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-lg": ["14px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                      "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "code-md": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "title-md": ["16px", {"lineHeight": "1.5", "fontWeight": "600"}],
+                      "body-md": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "title-lg": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "label-md": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+              }
+            }
+          }
         }
-},
-    },
-  }
-</script>
+    </script>
 <style>
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .material-symbols-outlined.filled {
-            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        .filled-icon {
+          font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        
-        @keyframes shimmer-shine {
-            0% { background-position: 200% center; }
-            100% { background-position: -200% center; }
+        input:focus-visible, select:focus-visible, textarea:focus-visible {
+            outline: none;
+            border-color: #2563EB !important;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3) !important;
         }
-
-        .animated-gradient-text {
-            background: linear-gradient(
-                110deg,
-                #1e40af 20%,
-                #006c49 40%,
-                rgba(255, 255, 255, 0.6) 50%,
-                #00288e 60%,
-                #1e40af 80%
-            );
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            animation: shimmer-shine 4s linear infinite;
+        .form-input {
+            width: 100%;
+            border-radius: 0.25rem;
+            border: 1px solid #E2E8F0;
+            background-color: #FFFFFF;
+            padding: 8px 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #191c1e;
+            transition: all 0.2s ease-in-out;
         }
-
-        @keyframes shimmer-sweep {
-            0% { background-position: -200% center; }
-            100% { background-position: 200% center; }
+        .form-label {
+            display: block;
+            margin-bottom: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            color: #64748B;
         }
-
-        .shimmer-text-effect {
-            background: linear-gradient(
-                110deg,
-                #00288e 30%,
-                #b8c4ff 50%,
-                #00288e 70%
-            );
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            animation: shimmer-sweep 3s linear infinite;
+        .section-card {
+            background-color: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            border-radius: 0.5rem;
+            padding: 16px;
+            margin-bottom: 24px;
+            box-shadow: 0px 1px 3px rgba(0,0,0,0.05);
         }
-
-        @media (prefers-reduced-motion: reduce) {
-            .animated-gradient-text {
-                animation: none;
-                background: linear-gradient(to right, #1e40af, #006c49);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                color: transparent;
-            }
-            
-            .shimmer-text-effect {
-                animation: none;
-                background: none;
-                -webkit-text-fill-color: initial;
-                color: #00288e;
-            }
+        .section-header {
+            border-bottom: 1px solid #F1F5F9;
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+        }
+        .step-content {
+            display: none;
+        }
+        .step-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 <style>
@@ -255,268 +169,669 @@
       min-height: max(884px, 100dvh);
     }
   </style>
-<link class="" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/></head>
-<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col md:flex-row pb-20 md:pb-0">
-<!-- TopAppBar (Mobile only, hidden on md) -->
-<header class="md:hidden fixed top-0 w-full z-50 flex justify-between items-center px-gutter h-16 bg-surface border-b border-outline-variant shadow-sm transition-colors cursor-pointer active:scale-95 transition-transform">
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-primary text-2xl">fingerprint</span>
-<span class="font-headline-sm text-headline-sm font-bold text-primary">WorkforceOS</span>
+</head>
+<body class="bg-surface-bright text-on-surface font-body-lg antialiased min-h-screen flex flex-col md:flex-row">
+<!-- Sidebar Navigation Drawer -->
+<aside class="hidden md:flex flex-col py-lg gap-base bg-surface-container-low dark:bg-surface-dim border-r border-outline-variant dark:border-outline shadow-lg h-full w-64 fixed left-0 top-0 z-40">
+<div class="px-md mb-lg flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim text-headline-md">admin_panel_settings</span>
+<span class="font-headline-md text-primary dark:text-primary-fixed-dim tracking-tight">AssetFlow</span>
 </div>
-<img alt="Enterprise Logo" class="w-8 h-8 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8g7qEKX-DGocAUvcdNbg8OzRmAoMmb3fjm6n7aNnwPEhE-_AUhBxDF6SsBt2cQsef4yXbLcszxfN-wMgCFUrpxoH7cfeMUjJnvMKNzypjki0I-2CmuYxGHsHrYPO_mz3vgKBbog55MHMikEX26DtOPQw5D76DEvPG7vDEf0Nua6ttHOt6CtfCqPusW3YB4XUMNoXFHT9f5Ns3dkUiJ-pa0IEwKWvu7hheDfpfC1HuXvkA7yUlh_KZyy2ghCSusMmPhlN9eWhy94E"/>
-</header>
-<!-- NavigationDrawer (Desktop only) -->
-<aside class="hidden md:flex flex-col h-screen w-[280px] fixed left-0 top-0 bg-surface border-r border-outline-variant shadow-md py-lg px-md z-40 transition-all duration-200 ease-in-out">
-<!-- Header -->
-<div class="flex items-center gap-md mb-8 px-md">
-<span class="material-symbols-outlined text-primary text-3xl">fingerprint</span>
-<span class="font-headline-sm text-headline-sm font-bold text-primary">WorkforceOS</span>
+<div class="px-md mb-md flex items-center gap-sm">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-on-surface-variant">person</span>
 </div>
-<!-- Profile Header -->
-<div class="flex items-center gap-md mb-8 px-md">
-<img alt="User Avatar" class="w-12 h-12 rounded-full object-cover border-2 border-surface-container-high shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8g7qEKX-DGocAUvcdNbg8OzRmAoMmb3fjm6n7aNnwPEhE-_AUhBxDF6SsBt2cQsef4yXbLcszxfN-wMgCFUrpxoH7cfeMUjJnvMKNzypjki0I-2CmuYxGHsHrYPO_mz3vgKBbog55MHMikEX26DtOPQw5D76DEvPG7vDEf0Nua6ttHOt6CtfCqPusW3YB4XUMNoXFHT9f5Ns3dkUiJ-pa0IEwKWvu7hheDfpfC1HuXvkA7yUlh_KZyy2ghCSusMmPhlN9eWhy94E"/>
-<div class="flex flex-col">
-<span class="font-body-md text-body-md font-semibold text-on-surface">Alex Rivera</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Senior Associate</span>
-<span class="font-label-md text-label-md text-outline mt-1">Last Login: 08:45 AM</span>
+<div>
+<div class="font-title-md text-on-surface">Service Tech #402</div>
+<div class="font-label-md text-on-surface-variant">Enterprise Admin</div>
+<div class="font-label-md text-primary flex items-center gap-1 mt-1">
+<div class="w-2 h-2 rounded-full bg-green-500"></div> Online
+                </div>
 </div>
 </div>
-<!-- Navigation Links -->
-<nav class="flex-1 space-y-sm">
-<a class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-container-highest rounded-full transition-colors font-body-md text-body-md" href="#">
-<span class="material-symbols-outlined">dashboard</span>
-<span class="">Dashboard</span>
+<nav class="flex-1 flex flex-col gap-1 pr-4">
+<a class="flex items-center gap-md py-sm pl-md text-on-surface-variant hover:bg-surface-container-high rounded-r-full mr-4 hover:bg-surface-container-highest transition-all active:scale-98" href="#">
+<span class="material-symbols-outlined">devices</span>
+<span class="font-body-md text-body-md">Active Assets</span>
 </a>
-<a class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-container-highest rounded-full transition-colors font-body-md text-body-md" href="#">
-<span class="material-symbols-outlined">history</span>
-<span class="">Attendance History</span>
+<a class="flex items-center gap-md py-sm pl-md text-on-surface-variant hover:bg-surface-container-high rounded-r-full mr-4 hover:bg-surface-container-highest transition-all active:scale-98" href="#">
+<span class="material-symbols-outlined">monitor_heart</span>
+<span class="font-body-md text-body-md">System Health</span>
 </a>
-<!-- Active State using Intent Fallback (Records -> Attendance History -> List View) -->
-<a class="flex items-center gap-md bg-primary-container text-on-primary-container rounded-full px-md py-sm font-body-md text-body-md shadow-sm" href="#">
-<span class="material-symbols-outlined filled">list_alt</span>
-<span class="font-semibold">Records</span>
+<a class="flex items-center gap-md py-sm pl-md text-on-surface-variant hover:bg-surface-container-high rounded-r-full mr-4 hover:bg-surface-container-highest transition-all active:scale-98" href="#">
+<span class="material-symbols-outlined">lan</span>
+<span class="font-body-md text-body-md">Network Map</span>
 </a>
-<a class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-container-highest rounded-full transition-colors font-body-md text-body-md" href="#">
-<span class="material-symbols-outlined">face</span>
-<span class="">Biometric Setup</span>
+<a class="flex items-center gap-md py-sm pl-md bg-primary-container text-on-primary-container font-bold rounded-r-full mr-4 hover:bg-surface-container-highest transition-all active:scale-98" href="#">
+<span class="material-symbols-outlined filled-icon">rule</span>
+<span class="font-body-md text-body-md">Pending Approvals</span>
 </a>
-<a class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-container-highest rounded-full transition-colors font-body-md text-body-md mt-auto" href="#">
-<span class="material-symbols-outlined">settings</span>
-<span class="">Settings</span>
+<a class="flex items-center gap-md py-sm pl-md text-on-surface-variant hover:bg-surface-container-high rounded-r-full mr-4 hover:bg-surface-container-highest transition-all active:scale-98" href="#">
+<span class="material-symbols-outlined">support_agent</span>
+<span class="font-body-md text-body-md">Support</span>
 </a>
 </nav>
 </aside>
-<!-- Main Content Canvas -->
-<main class="flex-1 md:ml-[280px] pt-16 md:pt-0 min-h-screen px-4 sm:px-gutter py-lg">
-<div class="max-w-container-max mx-auto space-y-lg">
-<!-- Page Header -->
-<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pt-4">
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-64 flex flex-col min-h-screen relative pb-24 md:pb-0">
+<!-- TopAppBar (Mobile & Web) -->
+<header class="flex items-center justify-between px-md py-sm w-full bg-surface-container-lowest dark:bg-surface-dim border-b border-outline-variant dark:border-outline shadow-sm w-full top-0 sticky z-30">
+<div class="flex items-center gap-sm md:hidden">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim text-headline-md">admin_panel_settings</span>
+<span class="font-headline-lg text-primary dark:text-primary-fixed-dim tracking-tight font-bold">AssetFlow</span>
+</div>
+<div class="hidden md:flex items-center gap-sm">
+<h1 class="font-title-lg text-title-lg text-on-surface">PM - REPORT (June - 2026)</h1>
+</div>
+<div class="flex items-center gap-sm">
+<button class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-colors active:opacity-80">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</header>
+<!-- Form Canvas -->
+<div class="p-4 md:p-8 max-w-5xl mx-auto w-full" id="formContainer">
+<div class="mb-6">
+<h2 class="font-headline-lg text-headline-lg text-on-surface hidden md:block">System Details Input</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Complete the preventive maintenance report for the current cycle. Ensure all serial numbers and configurations are accurate.</p>
+</div>
+<!-- Progress Stepper -->
+<div class="mb-8">
+<div class="flex justify-between items-center mb-2">
+<span class="font-title-md text-on-surface" id="stepTitle">Step 1: Division &amp; User</span>
+<span class="font-label-md text-on-surface-variant" id="stepIndicator">Step 1 of 6</span>
+</div>
+<div class="w-full bg-surface-variant rounded-full h-2.5">
+<div class="bg-primary h-2.5 rounded-full transition-all duration-300" id="progressBar" style="width: 16.66%"></div>
+</div>
+</div>
+<form class="space-y-6" id="pmForm">
+<!-- Step 1 -->
+<div class="step-content active" id="step1">
+<!-- Section 1: Division & User Details -->
+<div class="section-card relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary opacity-5 rounded-bl-full pointer-events-none"></div>
+<div class="section-header">
+<h3 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">corporate_fare</span>
+                                Section 1: Division &amp; User Details
+                            </h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
 <div>
-<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight font-bold">Attendance Records - Minimal Timeline Variant</h1>
-<p class="font-body-md text-body-md text-on-surface-variant mt-1">Track your bi-hourly check-ins.</p>
+<label class="form-label">Division</label>
+<select class="form-input" required="">
+<option disabled="" selected="" value="">Select Division (1-50)</option>
+<script>
+                                        for(let i=1; i<=50; i++) document.write(`<option value="${i}">Division ${i}</option>`);
+                                    </script>
+</select>
 </div>
-<div class="flex gap-sm w-full sm:w-auto"><button class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-md py-2 bg-surface border border-outline-variant text-primary rounded-xl font-body-sm text-body-sm hover:bg-surface-container-high transition-colors shadow-sm">
-<span class="material-symbols-outlined text-[18px]">table_view</span>
-    Export Excel
-</button>
-<button class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-md py-2 bg-surface border border-outline-variant text-primary rounded-xl font-body-sm text-body-sm hover:bg-surface-container-high transition-colors shadow-sm">
-<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
-    Export PDF
-</button></div>
+<div>
+<label class="form-label">User Name</label>
+<input class="form-input" pattern="[A-Za-z\s]+" placeholder="Alphabet only" required="" title="Only alphabetic characters allowed" type="text"/>
 </div>
-<!-- Daily Progress Summary -->
-<div class="bg-surface border border-outline-variant rounded-xl p-md shadow-sm mb-lg"><button class="w-full flex justify-between items-center group" onclick="const content = this.nextElementSibling; const icon = this.querySelector('.expand-icon'); if(content.classList.contains('hidden')) { content.classList.remove('hidden'); content.classList.add('block'); icon.style.transform = 'rotate(180deg)'; } else { content.classList.add('hidden'); content.classList.remove('block'); icon.style.transform = 'rotate(0deg)'; }">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary">filter_list</span>
-<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Filter Records</h2>
+<div>
+<label class="form-label">Designation</label>
+<input class="form-input" placeholder="Enter designation" required="" type="text"/>
 </div>
-<span class="material-symbols-outlined text-outline transition-transform duration-200 expand-icon">expand_more</span>
-</button>
-<div class="hidden mt-4 transition-all duration-300 ease-in-out">
-<div class="flex flex-col sm:flex-row items-end gap-4">
-<div class="flex-1 w-full">
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2">From</label>
+<div>
+<label class="form-label">Phone No.</label>
+<input class="form-input" pattern="[0-9]+" placeholder="Numeric only" required="" title="Only numbers allowed" type="tel"/>
+</div>
+<div class="lg:col-span-2">
+<label class="form-label">Location</label>
 <div class="relative">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">calendar_today</span>
-<input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest border border-outline-variant rounded font-body-sm text-body-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" type="date"/>
+<span class="material-symbols-outlined absolute left-3 top-2 text-on-surface-variant">location_on</span>
+<input class="form-input pl-10" placeholder="GPS Coordinates or Building Code" required="" type="text"/>
 </div>
 </div>
-<div class="flex-1 w-full">
-<label class="block font-label-md text-label-md text-on-surface-variant mb-2">To</label>
-<div class="relative">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">calendar_today</span>
-<input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest border border-outline-variant rounded font-body-sm text-body-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" type="date"/>
 </div>
 </div>
-<button class="w-full sm:w-auto px-6 py-2 bg-primary text-on-primary rounded font-body-sm text-body-sm font-semibold hover:opacity-90 transition-all shadow-sm flex items-center justify-center gap-2">
-<span class="material-symbols-outlined text-[18px]">filter_list</span>
-      Apply Filter
-    </button>
 </div>
-</div></div><div class="bg-surface border border-outline-variant rounded-xl p-md shadow-sm">
-<div class="flex justify-between items-center mb-4">
-<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Today's Progress</h2>
-<span class="font-label-md text-label-md px-2 py-1 rounded font-semibold bg-secondary-container text-on-secondary-container">3 of 5 Check-ins Complete</span>
+<!-- Step 2 -->
+<div class="step-content" id="step2">
+<!-- Section 2: Monitor -->
+<div class="section-card">
+<div class="section-header">
+<h3 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">desktop_windows</span>
+                                Section 2: Monitor
+                            </h3>
 </div>
-<div class="flex gap-2 h-3">
-<div class="flex-1 bg-secondary rounded-full"></div> <!-- 10 AM -->
-<div class="flex-1 bg-secondary rounded-full"></div> <!-- 12 PM -->
-<div class="flex-1 bg-tertiary-fixed-dim rounded-full"></div> <!-- 2 PM (Late) -->
-<div class="flex-1 bg-surface-variant rounded-full"></div> <!-- 4 PM -->
-<div class="flex-1 bg-surface-variant rounded-full"></div> <!-- 6 PM -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
+<div>
+<label class="form-label">Asset ID</label>
+<input class="form-input font-code-md text-code-md" placeholder="MON-XXXX" required="" type="text"/>
 </div>
-<div class="flex justify-between text-outline text-xs mt-2 font-label-md px-1">
-<span class="">10A</span>
-<span class="">12P</span>
-<span class="">2P</span>
-<span class="">4P</span>
-<span class="">6P</span>
+<div>
+<label class="form-label">Monitor Make</label>
+<select class="form-input" id="monitorMakeSelect" onchange="toggleOtherInput(this, 'monitorMakeOther')">
+<option value="Dell">Dell</option>
+<option value="HP">HP</option>
+<option value="Lenovo">Lenovo</option>
+<option value="Acer">Acer</option>
+<option value="OTHER">OTHER</option>
+</select>
+<input class="form-input mt-2 hidden" id="monitorMakeOther" placeholder="Specify Make" type="text"/>
+</div>
+<div>
+<label class="form-label">Monitor Size</label>
+<select class="form-input" id="monitorSizeSelect" onchange="toggleOtherInput(this, 'monitorSizeOther')">
+<option value="17">17"</option>
+<option value="19">19"</option>
+<option value="21">21"</option>
+<option value="24">24"</option>
+<option value="OTHER">OTHER</option>
+</select>
+<input class="form-input mt-2 hidden" id="monitorSizeOther" placeholder="Specify Size" type="text"/>
+</div>
+<div>
+<label class="form-label">Serial No.</label>
+<input class="form-input font-code-md text-code-md" placeholder="S/N" required="" type="text"/>
 </div>
 </div>
-<!-- Timeline View -->
-<div class="mt-8"><button class="w-full flex justify-between items-center group mb-6" onclick="const content = this.nextElementSibling; const icon = this.querySelector('.expand-icon'); if(content.classList.contains('hidden')) { content.classList.remove('hidden'); content.classList.add('block'); icon.innerText = 'expand_less'; } else { content.classList.add('hidden'); content.classList.remove('block'); icon.innerText = 'expand_more'; }">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary">timeline</span>
-<h3 class="font-headline-sm text-headline-sm font-semibold shimmer-text-effect">Today's Timeline</h3>
 </div>
-<span class="material-symbols-outlined transition-transform duration-200 expand-icon text-primary">expand_less</span>
+<!-- Section 3: Keyboard & Mouse -->
+<div class="section-card">
+<div class="section-header">
+<h3 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">keyboard</span>
+                                Section 3: Keyboard &amp; Mouse
+                            </h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
+<div>
+<label class="form-label">Keyboard Make</label>
+<select class="form-input" id="keyboardMakeSelect" onchange="toggleOtherInput(this, 'keyboardMakeOther')">
+<option value="Dell">Dell</option>
+<option value="HP">HP</option>
+<option value="Lenovo">Lenovo</option>
+<option value="Logitech">Logitech</option>
+<option value="TVS">TVS</option>
+<option value="OTHER">OTHER</option>
+</select>
+<input class="form-input mt-2 hidden" id="keyboardMakeOther" placeholder="Specify Keyboard Make" type="text"/>
+</div>
+<div>
+<label class="form-label">Keyboard S/N</label>
+<input class="form-input font-code-md text-code-md" placeholder="S/N" required="" type="text"/>
+</div>
+<div>
+<label class="form-label">Mouse Make</label>
+<select class="form-input" id="mouseMakeSelect" onchange="toggleOtherInput(this, 'mouseMakeOther')">
+<option value="Dell">Dell</option>
+<option value="HP">HP</option>
+<option value="Lenovo">Lenovo</option>
+<option value="Logitech">Logitech</option>
+<option value="OTHER">OTHER</option>
+</select>
+<input class="form-input mt-2 hidden" id="mouseMakeOther" placeholder="Specify Mouse Make" type="text"/>
+</div>
+<div>
+<label class="form-label">Mouse S/N</label>
+<input class="form-input font-code-md text-code-md" placeholder="S/N" required="" type="text"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="step-content" id="step3">
+<!-- Section 4: CPU Configuration -->
+<div class="section-card">
+<div class="section-header">
+<h3 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">memory</span>
+                                Section 4: CPU Configuration
+                            </h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
+<div>
+<label class="form-label">Asset ID</label>
+<input class="form-input font-code-md text-code-md" placeholder="CPU-XXXX" required="" type="text"/>
+</div>
+<div>
+<label class="form-label">Make</label>
+<input class="form-input" placeholder="Enter Make" required="" type="text"/>
+</div>
+<div>
+<label class="form-label">Model</label>
+<input class="form-input" placeholder="Enter Model" required="" type="text"/>
+</div>
+<div>
+<label class="form-label">Serial No.</label>
+<input class="form-input font-code-md text-code-md" placeholder="S/N" required="" type="text"/>
+</div>
+<div class="lg:col-span-2">
+<label class="form-label">Processor</label>
+<input class="form-input" placeholder="Enter Processor details" required="" type="text"/>
+</div>
+<div class="lg:col-span-2">
+<label class="form-label">Operating System</label>
+<input class="form-input" placeholder="Enter OS" required="" type="text"/>
+</div>
+<div>
+<label class="form-label">RAM-DDR Type</label>
+<select class="form-input" required="">
+<option value="DDR2">DDR2</option>
+<option value="DDR3">DDR3</option>
+<option value="DDR4">DDR4</option>
+<option value="DDR5">DDR5</option>
+</select>
+</div>
+<div class="lg:col-span-2">
+<label class="form-label">RAM Config</label>
+<div class="flex gap-2 items-center">
+<select class="form-input w-24" id="ramSticks" onchange="updateRamFields()">
+<option value="1">1 Stick</option>
+<option value="2">2 Sticks</option>
+<option value="3">3 Sticks</option>
+<option value="4">4 Sticks</option>
+</select>
+<div class="flex-1 flex gap-2" id="ramInputContainer">
+<input class="form-input w-20 ram-val" oninput="calculateTotalRam()" placeholder="GB" type="number" value=""/>
+</div>
+</div>
+<div class="text-xs text-primary mt-1 font-bold" id="totalRamLabel">Total: 0 GB</div>
+</div>
+<div>
+<label class="form-label">HDD/SSD</label>
+<input class="form-input" placeholder="e.g., 500GB HDD, 256GB SSD" required="" type="text"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="step-content" id="step4">
+<!-- Section 5: Network -->
+<div class="section-card">
+<div class="section-header">
+<h3 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">router</span>
+                                Section 5: Network
+                            </h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
+<div>
+<label class="form-label">Internet Status</label>
+<select class="form-input" required="">
+<option value="Connected">Connected</option>
+<option value="Disconnected">Disconnected</option>
+</select>
+</div>
+<div>
+<label class="form-label">Speed</label>
+<input class="form-input" placeholder="Mbps/Gbps" required="" type="text"/>
+</div>
+<div>
+<label class="form-label">Switch Port</label>
+<input class="form-input" placeholder="Port No." required="" type="text"/>
+</div>
+<div>
+<label class="form-label">Static IP</label>
+<input class="form-input font-code-md text-code-md" placeholder="192.168.x.x" required="" type="text"/>
+</div>
+</div>
+</div>
+<!-- Section 6: U.P.S & BATTERIES -->
+<div class="section-card">
+<div class="section-header">
+<h3 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">battery_charging_full</span>
+                                Section 6: U.P.S &amp; BATTERIES
+                            </h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div>
+<label class="form-label">UPS Make/Model</label>
+<select class="form-input" id="upsSelect" onchange="toggleOtherInput(this, 'upsOther')">
+<option value="APC">APC</option>
+<option value="Microtek">Microtek</option>
+<option value="Luminous">Luminous</option>
+<option value="OTHER">OTHER</option>
+</select>
+<input class="form-input mt-2 hidden" id="upsOther" placeholder="Specify UPS" type="text"/>
+</div>
+<div>
+<label class="form-label">Battery Capacity</label>
+<input class="form-input" placeholder="Ah rating" required="" type="text"/>
+</div>
+</div>
+</div>
+<!-- Section 9: ESCAN -->
+<div class="section-card">
+<div class="section-header">
+<h3 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">security</span>
+                                Section 9: ESCAN
+                            </h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div>
+<label class="form-label">Status</label>
+<select class="form-input" required="">
+<option value="Active">Active</option>
+<option value="Inactive">Inactive</option>
+<option value="Not Installed">Not Installed</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="step-content" id="step5">
+<!-- Section 7: Printer -->
+<div class="section-card" id="printerSection">
+<div class="section-header flex justify-between items-center">
+<h3 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">print</span>
+                                Section 7: Printer
+                            </h3>
+<button class="text-sm text-primary font-bold hover:underline" onclick="addSecondPrinter()" type="button">+ Add 2nd Printer</button>
+</div>
+<div class="printer-entry grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md mb-4 pb-4 border-b border-surface-variant last:border-0">
+<div>
+<label class="form-label">Asset ID</label>
+<input class="form-input font-code-md text-code-md" placeholder="PRN-XXXX" type="text"/>
+</div>
+<div>
+<label class="form-label">Make</label>
+<input class="form-input" placeholder="Make" type="text"/>
+</div>
+<div>
+<label class="form-label">Model</label>
+<input class="form-input" placeholder="Model" type="text"/>
+</div>
+<div>
+<label class="form-label">Serial No.</label>
+<input class="form-input font-code-md text-code-md" placeholder="S/N" type="text"/>
+</div>
+</div>
+</div>
+<!-- Section 8: Scanner -->
+<div class="section-card" id="scannerSection">
+<div class="section-header flex justify-between items-center">
+<h3 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">scanner</span>
+                                Section 8: Scanner
+                            </h3>
+<button class="text-sm text-primary font-bold hover:underline" onclick="addSecondScanner()" type="button">+ Add 2nd Scanner</button>
+</div>
+<div class="scanner-entry grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md mb-4 pb-4 border-b border-surface-variant last:border-0">
+<div>
+<label class="form-label">Asset ID</label>
+<input class="form-input font-code-md text-code-md" placeholder="SCN-XXXX" type="text"/>
+</div>
+<div>
+<label class="form-label">Make</label>
+<input class="form-input" placeholder="Make" type="text"/>
+</div>
+<div>
+<label class="form-label">Model</label>
+<input class="form-input" placeholder="Model" type="text"/>
+</div>
+<div>
+<label class="form-label">Serial No.</label>
+<input class="form-input font-code-md text-code-md" placeholder="S/N" type="text"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 6 -->
+<div class="step-content" id="step6">
+<!-- Section 10: REMARKS -->
+<div class="section-card">
+<div class="section-header">
+<h3 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">chat</span>
+                                Section 10: REMARKS
+                            </h3>
+</div>
+<div>
+<label class="form-label">Additional Comments</label>
+<textarea class="form-input h-24 resize-y" placeholder="Enter remarks..."></textarea>
+</div>
+</div>
+<!-- Section 11: Drop Images -->
+<div class="section-card">
+<div class="section-header">
+<h3 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">photo_camera</span>
+                                Section 11: Drop Images
+                            </h3>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-md">
+<div class="border-2 border-dashed border-outline-variant rounded-lg p-4 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-outline mb-2">desktop_windows</span>
+<span class="text-xs font-bold text-on-surface-variant">Desktop</span>
+</div>
+<div class="border-2 border-dashed border-outline-variant rounded-lg p-4 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-outline mb-2">memory</span>
+<span class="text-xs font-bold text-on-surface-variant">CPU</span>
+</div>
+<div class="border-2 border-dashed border-outline-variant rounded-lg p-4 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-outline mb-2">keyboard</span>
+<span class="text-xs font-bold text-on-surface-variant">Keyboard</span>
+</div>
+<div class="border-2 border-dashed border-outline-variant rounded-lg p-4 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-outline mb-2">mouse</span>
+<span class="text-xs font-bold text-on-surface-variant">Mouse</span>
+</div>
+<div class="border-2 border-dashed border-outline-variant rounded-lg p-4 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-outline mb-2">print</span>
+<span class="text-xs font-bold text-on-surface-variant">Printer</span>
+</div>
+<div class="border-2 border-dashed border-outline-variant rounded-lg p-4 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-outline mb-2">scanner</span>
+<span class="text-xs font-bold text-on-surface-variant">Scanner</span>
+</div>
+<div class="border-2 border-dashed border-outline-variant rounded-lg p-4 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-outline mb-2">battery_charging_full</span>
+<span class="text-xs font-bold text-on-surface-variant">UPS &amp; Batteries</span>
+</div>
+<div class="border-2 border-dashed border-outline-variant rounded-lg p-4 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-outline mb-2">description</span>
+<span class="text-xs font-bold text-on-surface-variant">Hard-copy Report</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Bar / Navigation -->
+<div class="flex flex-row items-center justify-between gap-sm mt-8 pb-8 border-t border-outline-variant dark:border-outline pt-6">
+<button class="px-6 py-3 rounded-lg border border-outline-variant text-on-surface-variant font-title-md text-title-md hover:bg-surface-container-low transition-colors flex items-center justify-center gap-2 hidden" id="prevBtn" onclick="nextStep(-1)" type="button">
+<span class="material-symbols-outlined">arrow_back</span>
+                        Back
+                    </button>
+<div class="flex-1"></div>
+<button class="px-6 py-3 rounded-lg bg-primary text-on-primary font-title-md text-title-md font-bold hover:bg-opacity-90 shadow-md transition-all active:scale-95 flex items-center justify-center gap-2" id="nextBtn" onclick="nextStep(1)" type="button">
+                        Next
+                        <span class="material-symbols-outlined">arrow_forward</span>
 </button>
-<div class="transition-all duration-300 ease-in-out block">
-<div class="relative pl-6 space-y-8"><div class="absolute left-[11px] top-2 bottom-2 w-[1px] bg-outline-variant opacity-30"></div>
-<!-- Item 1: Expanded Example -->
-<div class="relative group">
-<div class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-secondary ring-4 ring-background z-10"></div>
-<div class="ml-4">
-<div class="flex items-center gap-2">
-<span class="font-label-md text-label-md text-outline">10:00 AM</span>
-<span class="font-body-md text-body-md text-on-surface font-semibold">Checked in at 09:58 AM</span>
-<span class="text-success text-[10px] font-bold">ON TIME</span>
+<button class="px-6 py-3 rounded-lg bg-primary-container text-on-primary-container font-title-md text-title-md font-bold hover:bg-opacity-90 shadow-md transition-all active:scale-95 items-center justify-center gap-2 hidden" id="submitBtn" type="submit">
+<span class="material-symbols-outlined">send</span>
+                        Submit Report
+                    </button>
 </div>
-<div class="mt-2 p-3 bg-surface-container-low rounded-lg border border-outline-variant/30">
-<div class="flex items-start gap-2 text-on-surface-variant font-body-sm text-xs leading-relaxed">
-<span class="material-symbols-outlined text-[16px] text-outline shrink-0">location_on</span>
-<span>HQ - Main Entrance Lobby, BKC Road, Mumbai, Maharashtra 400051</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Item 2: Collapsed -->
-<div class="relative group">
-<div class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-secondary ring-4 ring-background z-10"></div>
-<div class="ml-4">
-<div class="flex items-center gap-2 cursor-pointer hover:opacity-70 transition-opacity">
-<span class="font-label-md text-label-md text-outline">12:00 PM</span>
-<span class="font-body-md text-body-md text-on-surface font-semibold">Checked in at 11:55 AM</span>
-<span class="text-success text-[10px] font-bold">ON TIME</span>
-<span class="material-symbols-outlined text-outline text-sm">expand_more</span>
-</div>
-</div>
-</div>
-<!-- Item 3: Collapsed Late -->
-<div class="relative group">
-<div class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-warning ring-4 ring-background z-10"></div>
-<div class="ml-4">
-<div class="flex items-center gap-2 cursor-pointer hover:opacity-70 transition-opacity">
-<span class="font-label-md text-label-md text-outline">02:00 PM</span>
-<span class="font-body-md text-body-md text-on-surface font-semibold">Checked in at 02:18 PM</span>
-<span class="text-warning text-[10px] font-bold">LATE (18m)</span>
-<span class="material-symbols-outlined text-outline text-sm">expand_more</span>
-</div>
-</div>
-</div>
-<!-- Item 4: Pending -->
-<div class="relative group">
-<div class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-outline-variant ring-4 ring-background z-10"></div>
-<div class="ml-4">
-<div class="flex items-center gap-2 opacity-50">
-<span class="font-label-md text-label-md text-outline">04:00 PM</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Awaiting check-in...</span>
-</div>
-</div>
-</div>
-<!-- Item 5: Pending -->
-<div class="relative group">
-<div class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-outline-variant ring-4 ring-background z-10"></div>
-<div class="ml-4">
-<div class="flex items-center gap-2 opacity-50">
-<span class="font-label-md text-label-md text-outline">06:00 PM</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Awaiting check-in...</span>
-</div>
-</div>
-</div></div>
-</div></div>
-<!-- Historical Log -->
-<div class="mt-12">
-<div class="flex justify-between items-center mb-4">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Previous Days History</h3>
-</div>
-<div class="bg-surface border border-outline-variant rounded-xl shadow-sm overflow-hidden divide-y divide-outline-variant">
-<div class="flex items-center justify-between p-4 hover:bg-surface-container-low transition-colors cursor-pointer">
-<div>
-<div class="font-body-md text-body-md font-medium text-on-surface">Yesterday, Oct 24</div>
-<div class="font-label-md text-label-md text-outline mt-1 flex items-center gap-2">
-<span class="px-1.5 py-0.5 bg-error-container text-on-error-container rounded text-[10px] font-bold">1 MISSED</span>
-                    4 of 5 complete
-                </div>
-</div>
-<div class="flex gap-1.5 h-6">
-<div class="w-2.5 rounded-full bg-secondary"></div>
-<div class="w-2.5 rounded-full bg-secondary"></div>
-<div class="w-2.5 rounded-full bg-secondary"></div>
-<div class="w-2.5 rounded-full bg-error"></div>
-<div class="w-2.5 rounded-full bg-secondary"></div>
-</div>
-</div>
-<div class="flex items-center justify-between p-4 hover:bg-surface-container-low transition-colors cursor-pointer">
-<div>
-<div class="font-body-md text-body-md font-medium text-on-surface">Monday, Oct 23</div>
-<div class="font-label-md text-label-md text-outline mt-1 flex items-center gap-2">
-<span class="px-1.5 py-0.5 bg-success-container text-success rounded text-[10px] font-bold">PERFECT</span>
-                    5 of 5 complete
-                </div>
-</div>
-<div class="flex gap-1.5 h-6">
-<div class="w-2.5 rounded-full bg-secondary"></div>
-<div class="w-2.5 rounded-full bg-secondary"></div>
-<div class="w-2.5 rounded-full bg-secondary"></div>
-<div class="w-2.5 rounded-full bg-secondary"></div>
-<div class="w-2.5 rounded-full bg-secondary"></div>
-</div>
-</div>
-<div class="flex items-center justify-between p-4 hover:bg-surface-container-low transition-colors cursor-pointer bg-surface-container-lowest">
-<div>
-<div class="font-body-md text-body-md font-medium text-on-surface">Friday, Oct 20</div>
-<div class="font-label-md text-label-md text-outline mt-1 flex items-center gap-2">
-<span class="px-1.5 py-0.5 bg-surface-variant text-on-surface-variant rounded text-[10px] font-bold">PTO</span>
-                    Exempt
-                </div>
-</div>
-<div class="flex gap-1.5 h-6 opacity-30">
-<div class="w-2.5 rounded-full bg-outline"></div>
-<div class="w-2.5 rounded-full bg-outline"></div>
-<div class="w-2.5 rounded-full bg-outline"></div>
-<div class="w-2.5 rounded-full bg-outline"></div>
-<div class="w-2.5 rounded-full bg-outline"></div>
-</div>
-</div>
-</div>
-<div class="mt-4 text-center">
-<button class="font-body-sm text-body-sm text-primary hover:underline font-semibold">View Full History</button>
-</div>
-</div>
+</form>
 </div>
 </main>
-<!-- BottomNavBar (Mobile only, hidden on md) -->
-<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface border-t border-outline-variant shadow-[0_-4px_6px_-1px_rgb(0,0,0,0.05)] h-20" onclick="const navItems = this.querySelectorAll('a'); const target = event.target.closest('a'); if (!target) return; navItems.forEach(item =&gt; { const iconSpan = item.querySelector('.material-symbols-outlined'); const textSpan = item.querySelector('span:not(.material-symbols-outlined)'); const iconWrapper = item.querySelector('div'); if (item === target) { if (!iconWrapper) { const newWrapper = document.createElement('div'); newWrapper.className = 'bg-secondary-container text-on-secondary-container rounded-full px-6 py-1 flex items-center justify-center mb-1'; iconSpan.classList.add('filled'); item.prepend(newWrapper); newWrapper.appendChild(iconSpan); } item.classList.remove('text-on-surface-variant'); item.classList.add('text-on-secondary-container'); textSpan.classList.add('font-bold', 'text-on-surface'); } else { if (iconWrapper) { item.prepend(iconSpan); iconWrapper.remove(); iconSpan.classList.remove('filled'); } item.classList.add('text-on-surface-variant'); item.classList.remove('text-on-secondary-container'); textSpan.classList.remove('font-bold', 'text-on-surface'); } });">
-<a class="flex flex-col items-center justify-center px-6 py-2 hover:bg-surface-variant active:scale-90 transition-transform duration-150 rounded-full text-on-secondary-container" href="#"><div class="bg-secondary-container text-on-secondary-container rounded-full px-6 py-1 flex items-center justify-center mb-1"><span class="material-symbols-outlined text-[24px] filled">alarm_on</span></div>
-<span class="font-label-md text-label-md mt-1 font-bold text-on-surface">Clock In</span>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden flex justify-around items-center h-16 w-full px-sm pb-safe bg-surface-container-lowest dark:bg-surface-dim border-t border-outline-variant dark:border-outline shadow-md fixed bottom-0 z-50">
+<a class="flex flex-col items-center justify-center text-secondary" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-md text-label-md mt-1">Dashboard</span>
 </a>
-<!-- Active State -->
-<a class="flex flex-col items-center justify-center px-6 py-2 active:scale-90 transition-transform duration-150 rounded-full text-on-surface-variant" href="#"><span class="material-symbols-outlined text-[24px]">list_alt</span>
-<span class="font-label-md text-label-md mt-1">Records</span>
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-4 py-1.5" href="#">
+<span class="material-symbols-outlined filled-icon">assignment</span>
+<span class="font-label-md text-label-md mt-1">Reports</span>
 </a>
-<a class="flex flex-col items-center justify-center px-6 py-2 hover:bg-surface-variant active:scale-90 transition-transform duration-150 rounded-full text-on-surface-variant" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span>
-<span class="font-label-md text-label-md mt-1">Profile</span>
+<a class="flex flex-col items-center justify-center text-secondary" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-label-md text-label-md mt-1">Inventory</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-md text-label-md mt-1">Settings</span>
 </a>
 </nav>
+<script>
+        let currentStep = 1;
+        const totalSteps = 6;
+        const stepTitles = [
+            "Step 1: Division & User",
+            "Step 2: Hardware",
+            "Step 3: CPU & RAM",
+            "Step 4: Network & Power",
+            "Step 5: Peripherals",
+            "Step 6: Remarks & Images"
+        ];
+
+        function showStep(n) {
+            let steps = document.getElementsByClassName("step-content");
+            for (let i = 0; i < steps.length; i++) {
+                steps[i].classList.remove("active");
+            }
+            steps[n - 1].classList.add("active");
+
+            // Update Progress Bar & Text
+            document.getElementById("progressBar").style.width = `${(n / totalSteps) * 100}%`;
+            document.getElementById("stepIndicator").innerText = `Step ${n} of ${totalSteps}`;
+            document.getElementById("stepTitle").innerText = stepTitles[n - 1];
+
+            // Toggle Buttons
+            document.getElementById("prevBtn").style.display = n === 1 ? "none" : "flex";
+            if (n === totalSteps) {
+                document.getElementById("nextBtn").style.display = "none";
+                document.getElementById("submitBtn").style.display = "flex";
+                document.getElementById("submitBtn").classList.remove("hidden");
+            } else {
+                document.getElementById("nextBtn").style.display = "flex";
+                document.getElementById("submitBtn").style.display = "none";
+            }
+        }
+
+        function nextStep(n) {
+            // Basic validation check before moving next
+            if (n > 0) {
+                const currentStepElement = document.getElementById(`step${currentStep}`);
+                const inputs = currentStepElement.querySelectorAll('input[required], select[required]');
+                let isValid = true;
+                inputs.forEach(input => {
+                    if (!input.checkValidity()) {
+                        input.reportValidity();
+                        isValid = false;
+                    }
+                });
+                if (!isValid) return;
+            }
+
+            currentStep += n;
+            showStep(currentStep);
+            
+            // Scroll to top of container
+            document.getElementById('formContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+
+        function toggleOtherInput(selectElement, inputId) {
+            const inputField = document.getElementById(inputId);
+            if (selectElement.value === 'OTHER') {
+                inputField.classList.remove('hidden');
+                inputField.required = true;
+            } else {
+                inputField.classList.add('hidden');
+                inputField.required = false;
+            }
+        }
+
+        function updateRamFields() {
+            const count = parseInt(document.getElementById('ramSticks').value);
+            const container = document.getElementById('ramInputContainer');
+            container.innerHTML = '';
+            for(let i=0; i<count; i++) {
+                container.innerHTML += `<input type="number" class="form-input w-20 ram-val" placeholder="GB" oninput="calculateTotalRam()">`;
+            }
+            calculateTotalRam();
+        }
+
+        function calculateTotalRam() {
+            const inputs = document.querySelectorAll('.ram-val');
+            let total = 0;
+            inputs.forEach(input => {
+                const val = parseFloat(input.value);
+                if(!isNaN(val)) total += val;
+            });
+            document.getElementById('totalRamLabel').textContent = `Total: ${total} GB`;
+        }
+
+        function addSecondPrinter() {
+            const section = document.getElementById('printerSection');
+            if (section.querySelectorAll('.printer-entry').length < 2) {
+                const newEntry = document.createElement('div');
+                newEntry.className = 'printer-entry grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md mb-4 pb-4 border-b border-surface-variant last:border-0 pt-4 border-t';
+                newEntry.innerHTML = `
+                    <div>
+                        <label class="form-label">Asset ID 2</label>
+                        <input type="text" class="form-input font-code-md text-code-md" placeholder="PRN-XXXX">
+                    </div>
+                    <div>
+                        <label class="form-label">Make 2</label>
+                        <input type="text" class="form-input" placeholder="Make">
+                    </div>
+                    <div>
+                        <label class="form-label">Model 2</label>
+                        <input type="text" class="form-input" placeholder="Model">
+                    </div>
+                    <div>
+                        <label class="form-label">Serial No. 2</label>
+                        <input type="text" class="form-input font-code-md text-code-md" placeholder="S/N">
+                    </div>
+                `;
+                section.appendChild(newEntry);
+            }
+        }
+
+        function addSecondScanner() {
+            const section = document.getElementById('scannerSection');
+            if (section.querySelectorAll('.scanner-entry').length < 2) {
+                const newEntry = document.createElement('div');
+                newEntry.className = 'scanner-entry grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md mb-4 pb-4 border-b border-surface-variant last:border-0 pt-4 border-t';
+                newEntry.innerHTML = `
+                    <div>
+                        <label class="form-label">Asset ID 2</label>
+                        <input type="text" class="form-input font-code-md text-code-md" placeholder="SCN-XXXX">
+                    </div>
+                    <div>
+                        <label class="form-label">Make 2</label>
+                        <input type="text" class="form-input" placeholder="Make">
+                    </div>
+                    <div>
+                        <label class="form-label">Model 2</label>
+                        <input type="text" class="form-input" placeholder="Model">
+                    </div>
+                    <div>
+                        <label class="form-label">Serial No. 2</label>
+                        <input type="text" class="form-input font-code-md text-code-md" placeholder="S/N">
+                    </div>
+                `;
+                section.appendChild(newEntry);
+            }
+        }
+
+        // Form submission mock
+        document.getElementById('pmForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simulate WhatsApp-style sound
+            console.log('Ding!'); 
+            alert('Report Submitted Successfully');
+            this.reset();
+            document.getElementById('totalRamLabel').textContent = 'Total: 0 GB';
+            currentStep = 1;
+            showStep(currentStep);
+            document.getElementById('formContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        
+        // Initialize stepper
+        showStep(currentStep);
+    </script>
 </body></html>
