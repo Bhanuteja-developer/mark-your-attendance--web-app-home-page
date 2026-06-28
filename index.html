@@ -5,7 +5,6 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet">
-
 <script id="tailwind-config">
   tailwind.config = {
     darkMode: "class",
@@ -75,32 +74,97 @@
                 "stack-lg": "32px"
         },
         "fontFamily": {
-                "label-md": [ "Geist" ],
-                "headline-md": [ "Space Grotesk" ],
-                "headline-lg-mobile": [ "Space Grotesk" ],
-                "headline-lg": [ "Space Grotesk" ],
-                "display-lg": [ "Space Grotesk" ],
-                "body-lg": [ "Geist" ],
-                "body-md": [ "Geist" ],
-                "code-sm": [ "Geist" ]
+                "label-md": [
+                        "Geist"
+                ],
+                "headline-md": [
+                        "Space Grotesk"
+                ],
+                "headline-lg-mobile": [
+                        "Space Grotesk"
+                ],
+                "headline-lg": [
+                        "Space Grotesk"
+                ],
+                "display-lg": [
+                        "Space Grotesk"
+                ],
+                "body-lg": [
+                        "Geist"
+                ],
+                "body-md": [
+                        "Geist"
+                ],
+                "code-sm": [
+                        "Geist"
+                ]
         },
         "fontSize": {
-                "label-md": [ "14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" } ],
-                "headline-md": [ "24px", { "lineHeight": "1.3", "fontWeight": "500" } ],
-                "headline-lg-mobile": [ "24px", { "lineHeight": "1.2", "fontWeight": "600" } ],
-                "headline-lg": [ "32px", { "lineHeight": "1.2", "fontWeight": "600" } ],
-                "display-lg": [ "48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" } ],
-                "body-lg": [ "18px", { "lineHeight": "1.6", "fontWeight": "400" } ],
-                "body-md": [ "16px", { "lineHeight": "1.5", "fontWeight": "400" } ],
-                "code-sm": [ "13px", { "lineHeight": "1.4", "fontWeight": "400" } ]
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "500"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "24px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                        }
+                ],
+                "code-sm": [
+                        "13px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "400"
+                        }
+                ]
         }
 },
     },
   }
 </script>
-
 <style>
-        body { font-family: 'Geist', sans-serif; background-color: #080a0f; } /* Deepened background for better glass effect */
+        body { font-family: 'Geist', sans-serif; background-color: #0f1115; }
         .font-headline-sm, .font-headline-lg-mobile, .font-headline-lg { font-family: 'Space Grotesk', sans-serif; }
         .material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
@@ -117,18 +181,18 @@
         .neon-glow-primary { text-shadow: 0 0 10px rgba(165, 231, 255, 0.5); }
         .neon-glow-secondary { box-shadow: 0 0 15px rgba(47, 248, 1, 0.3); }
         .neon-glow-error { box-shadow: 0 0 15px rgba(255, 180, 171, 0.3); }
-        
-        /* MODERN GLASSMORPHISM UTILITIES */
+
+        /* Modern Glassmorphism Classes */
         .glass-panel {
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(255, 255, 255, 0.05); 
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.08); 
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
         }
-        
+
         .glass-panel-strong {
-            background: rgba(255, 255, 255, 0.06);
+            background: rgba(255, 255, 255, 0.08); 
             backdrop-filter: blur(24px);
             -webkit-backdrop-filter: blur(24px);
             border: 1px solid rgba(255, 255, 255, 0.12);
@@ -144,18 +208,17 @@
   animation: pulse-subtle 2s ease-in-out infinite;
 }
 </style><style class="">@keyframes pulse-tertiary { 0% { box-shadow: 0 0 0 0 rgba(229, 215, 255, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(229, 215, 255, 0); } 100% { box-shadow: 0 0 0 0 rgba(229, 215, 255, 0); } }</style></head>
-
 <body class="text-on-background pb-[80px] md:hidden relative z-0">
 
-<!-- Ambient Background Orbs (Modern Glassmorphism Core) -->
+<!-- Atmospheric Background Orbs -->
 <div class="fixed inset-0 w-full h-full overflow-hidden pointer-events-none -z-10">
-    <div class="absolute rounded-full filter blur-[120px] opacity-25 bg-primary w-[400px] h-[400px] -top-20 -left-20 animate-pulse-subtle"></div>
-    <div class="absolute rounded-full filter blur-[150px] opacity-15 bg-tertiary-container w-[500px] h-[500px] top-1/3 -right-40" style="animation: pulse-subtle 4s infinite alternate; animation-delay: -2s;"></div>
-    <div class="absolute rounded-full filter blur-[100px] opacity-20 bg-secondary-container w-[300px] h-[300px] bottom-0 left-10" style="animation: pulse-subtle 5s infinite alternate-reverse; animation-delay: -4s;"></div>
+    <div class="absolute rounded-full filter blur-[120px] opacity-30 bg-cyan-600 w-[400px] h-[400px] -top-20 -left-20 animate-pulse-subtle"></div>
+    <div class="absolute rounded-full filter blur-[150px] opacity-20 bg-purple-600 w-[500px] h-[500px] top-1/3 -right-40" style="animation: pulse-subtle 4s infinite alternate; animation-delay: -2s;"></div>
+    <div class="absolute rounded-full filter blur-[100px] opacity-30 bg-blue-600 w-[300px] h-[300px] bottom-0 left-10" style="animation: pulse-subtle 5s infinite alternate-reverse; animation-delay: -4s;"></div>
 </div>
 
 <!-- TopAppBar (From JSON, adapted for Mobile) -->
-<header class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter h-16 glass-panel-strong !border-t-0 !border-x-0 !rounded-none">
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter h-16 glass-panel-strong shadow-sm !border-t-0 !border-x-0 !rounded-none border-b">
 <div class="flex items-center gap-stack-md">
 <span class="material-symbols-outlined text-primary cursor-pointer active:scale-95 transition-transform neon-glow-primary" data-icon="fingerprint" data-weight="fill">fingerprint</span>
 <h1 class="font-headline-md text-headline-md font-bold text-primary neon-glow-primary">WorkforceOS</h1>
@@ -165,7 +228,6 @@
 </div>
 </header>
 <main class="pt-[80px] px-gutter flex flex-col gap-stack-lg relative z-10">
-
 <!-- Page Header & Actions -->
 <div class="flex flex-col gap-stack-md mb-stack-lg">
   <div class="flex justify-between items-end">
@@ -173,16 +235,16 @@
       <p class="font-label-md text-label-md text-on-surface-variant">Nov 14, 2024</p>
       <h2 class="font-headline-md text-headline-md text-on-surface">Attendance Records</h2>
     </div>
-    <button aria-label="Refresh Records" class="w-10 h-10 rounded-full glass-panel flex items-center justify-center shadow-sm active:scale-95 transition-transform text-on-surface-variant hover:bg-white/10 animate-pulse-subtle" style="animation-duration: 2s; animation-timing-function: ease; animation-iteration-count: infinite; animation-direction: normal; animation-fill-mode: none; animation-play-state: running; animation-name: pulse-tertiary; animation-timeline: auto; animation-range: normal; --tw-shadow-color: #e5d7ff; --tw-shadow: 0 0 15px var(--tw-shadow-color);">
+    <button aria-label="Refresh Records" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center shadow-sm active:scale-95 transition-transform text-on-surface-variant hover:bg-white/10 glass-panel animate-pulse-subtle" style="animation-duration: 2s; animation-timing-function: ease; animation-iteration-count: infinite; animation-direction: normal; animation-fill-mode: none; animation-play-state: running; animation-name: pulse-tertiary; animation-timeline: auto; animation-range: normal; --tw-shadow-color: #e5d7ff; --tw-shadow: 0 0 15px var(--tw-shadow-color);">
       <span class="material-symbols-outlined">refresh</span>
     </button>
   </div>
-  <button id="search-trigger" class="glass-panel px-6 py-3 rounded-full flex items-center gap-3 hover:bg-white/10 transition-all group w-full relative" style="border: 1px solid rgba(0, 210, 255, 0.4);"><div class="flex items-center justify-between w-full relative z-10"><div class="flex items-center gap-3 text-primary"><span class="material-symbols-outlined group-hover:text-primary-container transition-colors">search</span><span class="font-label-md text-label-md tracking-wide uppercase">SEARCH OLD RECORDS</span></div><span class="material-symbols-outlined text-outline">calendar_today</span></div></button>
+  <button id="search-trigger" class="glass-panel px-6 py-3 rounded-full flex items-center gap-3 hover:bg-white/10 transition-all group w-full relative border border-white/10" style="border: 1px solid rgba(0, 210, 255, 0.4);"><div class="flex items-center justify-between w-full relative z-10"><div class="flex items-center gap-3 text-primary"><span class="material-symbols-outlined group-hover:text-primary-container transition-colors">search</span><span class="font-label-md text-label-md tracking-wide uppercase">SEARCH OLD RECORDS</span></div><span class="material-symbols-outlined text-outline">calendar_today</span></div></button>
 </div>
 <!-- Search Bar Trigger -->
 
 <!-- Analytics: Today's Progress -->
-<section class="rounded-xl p-stack-md glass-panel"><div class="flex justify-between items-center">
+<section class="rounded-xl border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.5),0_0_20px_rgba(0,210,255,0.2)] p-stack-md glass-panel"><div class="flex justify-between items-center">
 <h3 class="font-medium text-title-lg text-on-surface">Today's Progress</h3>
 <span class="font-code-sm text-code-sm text-primary bg-primary/10 px-3 py-1 rounded-full border border-primary/30">SYNC: 3/5</span>
 </div>
@@ -212,19 +274,18 @@
 <span class="font-code-sm text-code-sm text-on-surface-variant opacity-50">16:00</span>
 </div>
 </div></section>
-
 <!-- Timeline: Bi-hourly Check-ins -->
-<section class="flex flex-col gap-stack-sm">
+<section class="flex flex-col gap-stack-sm shadow-2xl">
 <h3 class="font-title-lg text-title-lg text-on-surface mb-stack-sm">Today's Timeline</h3>
 <!-- Timeline Item 1 -->
-<div class="relative pl-gutter pb-stack-md"><div class="absolute left-[11px] top-6 bottom-[-8px] w-px bg-white/10"></div><div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-secondary-container border-2 border-[#080a0f] flex items-center justify-center z-10 neon-glow-secondary"><span class="material-symbols-outlined text-[14px] text-on-secondary-container">check</span></div><div class="p-stack-md relative overflow-hidden rounded-[24px] glass-panel"><div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary/20 via-white/10 to-primary/20 animate-pulse-subtle"></div><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent to-secondary/40"></div><div class="flex justify-between items-start mb-stack-sm"><div class="flex flex-col"><p class="font-label-md font-bold uppercase tracking-wider text-primary neon-glow-primary text-[12px]">23-Jun-2026 (10:00 AM SLOT)</p><p class="font-label-md text-label-md font-bold text-on-surface mt-unit">Checked in at 09:55 AM</p></div><span class="bg-secondary-container/20 border border-secondary-container text-secondary-container px-stack-sm py-[2px] rounded-lg font-label-md text-label-md font-bold uppercase neon-glow-secondary">ON TIME</span></div><div class="flex gap-stack-md p-stack-md rounded-xl border border-white/10 bg-white/5"><div class="flex flex-col gap-stack-sm shrink-0 items-center"><div class="w-16 h-16 rounded-lg overflow-hidden border border-white/10 cursor-pointer active:scale-95 transition-transform" onclick="openImageModal(this.querySelector('img').src)"><img alt="User Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4aR62S-kQC8yQ2E9FT7tWYHvst9cvsIoqi1PkGoq0w5FkD-8aTxCzZK06oLr3tHKTupVPDIf_pgPJ-Dz5i8KZvJtV7bbkA-fBAI_YpTeb1IImlENq8TxqVA6qHP3WYur1XMcXjOrl1phhp95YOlXnFlxQFA9-7qdxuFtzsWR0Fkn4Iu46IdV6f6oZdSF2BLc8MWwUiQRddlB4VJiiqJ9IkHES8Bt6hsd06Sqdj_sP6vnRNZaalfo04YnjVQ4vssPF6VeUam4-z9E"></div><a class="flex items-center gap-unit px-3 py-1 bg-primary-container/20 border border-primary-container text-primary-container rounded-md font-medium text-label-md active:scale-95 transition-transform" href="https://www.google.com/maps/search/?api=1&amp;query=40.7128,-74.0060" target="_blank">&nbsp;Google<br>&nbsp; &nbsp;Map</a></div><div class="flex flex-col gap-unit"><div class="flex items-center gap-unit"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><span class="font-label-md text-label-md text-on-surface font-bold">Lat: 40.7128° N | Long: 74.0060° W</span></div><div class="flex items-start gap-unit"><span class="material-symbols-outlined text-outline text-[18px]">corporate_fare</span><div class="flex flex-col"><p class="font-label-md text-label-md text-on-surface-variant leading-tight overflow-hidden" id="address-text-1" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">HQ Building, Main Entrance Lobby, New York City, NY 10007</p><button class="text-primary font-label-md text-label-md mt-unit text-left w-fit active:scale-95 transition-transform" onclick="const p = document.getElementById('address-text-1'); const isExpanded = p.style.display === 'block'; p.style.display = isExpanded ? '-webkit-box' : 'block'; this.textContent = isExpanded ? 'more' : 'less';">&gt;&gt;more</button></div></div></div></div></div></div>
+<div class="relative pl-gutter pb-stack-md"><div class="absolute left-[11px] top-6 bottom-[-8px] w-px bg-white/10"></div><div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-secondary-container border-2 border-[#0f1115] flex items-center justify-center z-10 neon-glow-secondary"><span class="material-symbols-outlined text-[14px] text-on-secondary-container">check</span></div><div class="border border-white/10 p-stack-md shadow-sm relative overflow-hidden rounded-[24px] glass-panel"><div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary/20 via-white/10 to-primary/20 animate-pulse-subtle"></div><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent to-secondary/40"></div><div class="flex justify-between items-start mb-stack-sm"><div class="flex flex-col"><p class="font-label-md font-bold uppercase tracking-wider text-primary neon-glow-primary text-[12px]">23-Jun-2026 (10:00 AM SLOT)</p><p class="font-label-md text-label-md font-bold text-on-surface mt-unit">Checked in at 09:55 AM</p></div><span class="bg-secondary-container/20 border border-secondary-container text-secondary-container px-stack-sm py-[2px] rounded-lg font-label-md text-label-md font-bold uppercase neon-glow-secondary">ON TIME</span></div><div class="flex gap-stack-md p-stack-md rounded-xl border border-white/10 bg-white/5"><div class="flex flex-col gap-stack-sm shrink-0 items-center"><div class="w-16 h-16 rounded-lg overflow-hidden border border-white/10 cursor-pointer active:scale-95 transition-transform" onclick="openImageModal(this.querySelector('img').src)"><img alt="User Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4aR62S-kQC8yQ2E9FT7tWYHvst9cvsIoqi1PkGoq0w5FkD-8aTxCzZK06oLr3tHKTupVPDIf_pgPJ-Dz5i8KZvJtV7bbkA-fBAI_YpTeb1IImlENq8TxqVA6qHP3WYur1XMcXjOrl1phhp95YOlXnFlxQFA9-7qdxuFtzsWR0Fkn4Iu46IdV6f6oZdSF2BLc8MWwUiQRddlB4VJiiqJ9IkHES8Bt6hsd06Sqdj_sP6vnRNZaalfo04YnjVQ4vssPF6VeUam4-z9E"></div><a class="flex items-center gap-unit px-3 py-1 bg-primary-container/20 border border-primary-container text-primary-container rounded-md font-medium text-label-md active:scale-95 transition-transform" href="https://www.google.com/maps/search/?api=1&amp;query=40.7128,-74.0060" target="_blank">&nbsp;Google<br>&nbsp; &nbsp;Map</a></div><div class="flex flex-col gap-unit"><div class="flex items-center gap-unit"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><span class="font-label-md text-label-md text-on-surface font-bold">Lat: 40.7128° N | Long: 74.0060° W</span></div><div class="flex items-start gap-unit"><span class="material-symbols-outlined text-outline text-[18px]">corporate_fare</span><div class="flex flex-col"><p class="font-label-md text-label-md text-on-surface-variant leading-tight overflow-hidden" id="address-text-1" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">HQ Building, Main Entrance Lobby, New York City, NY 10007</p><button class="text-primary font-label-md text-label-md mt-unit text-left w-fit active:scale-95 transition-transform" onclick="const p = document.getElementById('address-text-1'); const isExpanded = p.style.display === 'block'; p.style.display = isExpanded ? '-webkit-box' : 'block'; this.textContent = isExpanded ? 'more' : 'less';">&gt;&gt;more</button></div></div></div></div></div></div>
 <!-- Timeline Item 2 -->
 <div class="relative pl-gutter pb-stack-md">
 <div class="absolute left-[11px] top-6 bottom-[-8px] w-px bg-white/10"></div>
-<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-secondary-container border-2 border-[#080a0f] flex items-center justify-center z-10 neon-glow-secondary">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-secondary-container border-2 border-[#0f1115] flex items-center justify-center z-10 neon-glow-secondary">
 <span class="material-symbols-outlined text-[14px] text-on-secondary-container">check</span>
 </div>
-<div class="p-stack-md relative overflow-hidden rounded-[24px] glass-panel"><div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary/20 via-white/10 to-primary/20 animate-pulse-subtle"></div><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent to-secondary/40"></div>
+<div class="border border-white/10 p-stack-md shadow-sm relative overflow-hidden rounded-[24px] glass-panel"><div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary/20 via-white/10 to-primary/20 animate-pulse-subtle"></div><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent to-secondary/40"></div>
 <div class="flex justify-between items-start mb-stack-sm">
 <div class="flex flex-col">
 <p class="font-label-md text-primary font-bold uppercase tracking-wider neon-glow-primary text-[12px]">24-JUN-2026 (12:00 PM SLOT)</p>
@@ -256,7 +317,7 @@
 </div></div>
 </div>
 <!-- Timeline Item 3 (Late) -->
-<div class="relative pl-gutter pb-stack-md"><div class="absolute left-[11px] top-6 bottom-[-8px] w-px bg-white/10 dashed-line border-l border-dashed border-white/20" style="background: transparent;"></div><div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-error-container border-2 border-[#080a0f] flex items-center justify-center z-10 neon-glow-error"><span class="material-symbols-outlined text-[14px] text-on-error-container">warning</span></div><div class="p-stack-md relative overflow-hidden rounded-[24px] glass-panel border-error-container/30"><div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary/20 via-white/10 to-primary/20 animate-pulse-subtle"></div><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent to-error/40"></div><div class="flex justify-between items-start mb-stack-sm"><div class="flex flex-col"><p class="font-label-md text-error font-bold uppercase tracking-wider text-[12px]">23-Jun-2026 (02:00 PM SLOT)</p><p class="font-label-md text-label-md font-bold text-on-surface mt-unit">Checked in at 09:55 AM</p></div><span class="bg-error-container/20 border border-error-container text-error px-stack-sm py-[2px] rounded-lg font-label-md text-label-md font-bold uppercase neon-glow-error">LATE</span></div><div class="flex gap-stack-md bg-error-container/10 p-stack-md rounded-xl border border-error-container/30"><div class="flex flex-col gap-stack-sm shrink-0 items-center"><div class="w-16 h-16 rounded-lg overflow-hidden border border-error-container/50 cursor-pointer active:scale-95 transition-transform" onclick="openImageModal(this.querySelector('img').src)"><img alt="User Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4aR62S-kQC8yQ2E9FT7tWYHvst9cvsIoqi1PkGoq0w5FkD-8aTxCzZK06oLr3tHKTupVPDIf_pgPJ-Dz5i8KZvJtV7bbkA-fBAI_YpTeb1IImlENq8TxqVA6qHP3WYur1XMcXjOrl1phhp95YOlXnFlxQFA9-7qdxuFtzsWR0Fkn4Iu46IdV6f6oZdSF2BLc8MWwUiQRddlB4VJiiqJ9IkHES8Bt6hsd06Sqdj_sP6vnRNZaalfo04YnjVQ4vssPF6VeUam4-z9E"></div><a class="flex items-center gap-unit px-3 py-1 bg-primary-container/20 border border-primary-container text-primary-container rounded-md font-medium text-label-md active:scale-95 transition-transform" href="https://www.google.com/maps/search/?api=1&amp;query=40.7580,-73.9855" target="_blank">&nbsp;Google<br>&nbsp; &nbsp;Map</a></div><div class="flex flex-col gap-unit"><div class="flex items-center gap-unit"><span class="material-symbols-outlined text-error text-[18px]">location_on</span><span class="font-label-md text-label-md text-on-surface font-bold">Lat: 40.7580° N | Long: 73.9855° W</span></div><div class="flex items-start gap-unit"><span class="material-symbols-outlined text-outline text-[18px]">apartment</span><div class="flex flex-col">
+<div class="relative pl-gutter pb-stack-md"><div class="absolute left-[11px] top-6 bottom-[-8px] w-px bg-white/10 dashed-line border-l border-dashed border-white/20" style="background: transparent;"></div><div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-error-container border-2 border-[#0f1115] flex items-center justify-center z-10 neon-glow-error"><span class="material-symbols-outlined text-[14px] text-on-error-container">warning</span></div><div class="border border-error-container/50 p-stack-md shadow-sm relative overflow-hidden rounded-[24px] glass-panel"><div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary/20 via-white/10 to-primary/20 animate-pulse-subtle"></div><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent to-error/40"></div><div class="flex justify-between items-start mb-stack-sm"><div class="flex flex-col"><p class="font-label-md text-error font-bold uppercase tracking-wider text-[12px]">23-Jun-2026 (02:00 PM SLOT)</p><p class="font-label-md text-label-md font-bold text-on-surface mt-unit">Checked in at 09:55 AM</p></div><span class="bg-error-container/20 border border-error-container text-error px-stack-sm py-[2px] rounded-lg font-label-md text-label-md font-bold uppercase neon-glow-error">LATE</span></div><div class="flex gap-stack-md bg-error-container/10 p-stack-md rounded-xl border border-error-container/30"><div class="flex flex-col gap-stack-sm shrink-0 items-center"><div class="w-16 h-16 rounded-lg overflow-hidden border border-error-container/50 cursor-pointer active:scale-95 transition-transform" onclick="openImageModal(this.querySelector('img').src)"><img alt="User Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4aR62S-kQC8yQ2E9FT7tWYHvst9cvsIoqi1PkGoq0w5FkD-8aTxCzZK06oLr3tHKTupVPDIf_pgPJ-Dz5i8KZvJtV7bbkA-fBAI_YpTeb1IImlENq8TxqVA6qHP3WYur1XMcXjOrl1phhp95YOlXnFlxQFA9-7qdxuFtzsWR0Fkn4Iu46IdV6f6oZdSF2BLc8MWwUiQRddlB4VJiiqJ9IkHES8Bt6hsd06Sqdj_sP6vnRNZaalfo04YnjVQ4vssPF6VeUam4-z9E"></div><a class="flex items-center gap-unit px-3 py-1 bg-primary-container/20 border border-primary-container text-primary-container rounded-md font-medium text-label-md active:scale-95 transition-transform" href="https://www.google.com/maps/search/?api=1&amp;query=40.7580,-73.9855" target="_blank">&nbsp;Google<br>&nbsp; &nbsp;Map</a></div><div class="flex flex-col gap-unit"><div class="flex items-center gap-unit"><span class="material-symbols-outlined text-error text-[18px]">location_on</span><span class="font-label-md text-label-md text-on-surface font-bold">Lat: 40.7580° N | Long: 73.9855° W</span></div><div class="flex items-start gap-unit"><span class="material-symbols-outlined text-outline text-[18px]">apartment</span><div class="flex flex-col">
 <p class="font-label-md text-label-md text-on-surface-variant leading-tight overflow-hidden" id="address-text-3" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">HQ Building, Main Entrance Lobby, New York City, NY 10007</p>
 <button class="text-primary font-label-md text-label-md mt-unit text-left w-fit active:scale-95 transition-transform" onclick="const p = document.getElementById('address-text-3'); const isExpanded = p.style.display === 'block'; p.style.display = isExpanded ? '-webkit-box' : 'block'; this.textContent = isExpanded ? 'more' : 'less';">
     more
@@ -264,10 +325,10 @@
 </div></div></div></div></div></div>
 <!-- Timeline Item 4 (Pending) -->
 <div class="relative pl-gutter"><div class="absolute left-[11px] top-6 bottom-[-8px] w-px border-l border-dashed border-white/20" style="background: transparent;"></div>
-<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-white/10 border-2 border-[#080a0f] flex items-center justify-center z-10 backdrop-blur-sm">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-white/10 border-2 border-[#0f1115] flex items-center justify-center z-10 backdrop-blur-md">
 <span class="w-2 h-2 rounded-full bg-white/50"></span>
 </div>
-<div class="opacity-80 p-stack-md border-dashed rounded-[24px] glass-panel !border-white/20">
+<div class="opacity-80 border border-white/10 p-stack-md border-dashed rounded-[24px] glass-panel">
 <div class="flex justify-between items-center">
 <div>
 <p class="font-label-md text-on-surface-variant uppercase tracking-wider text-[12px]">Slot 4 • 04:00 PM</p>
@@ -281,10 +342,10 @@
 </div>
 <!-- Timeline Item 5 (Pending) -->
 <div class="relative pl-gutter">
-<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-white/10 border-2 border-[#080a0f] flex items-center justify-center z-10 backdrop-blur-sm">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-white/10 border-2 border-[#0f1115] flex items-center justify-center z-10 backdrop-blur-md">
 <span class="w-2 h-2 rounded-full bg-white/50"></span>
 </div>
-<div class="opacity-80 p-stack-md border-dashed rounded-[24px] mt-stack-md glass-panel !border-white/20">
+<div class="opacity-80 border border-white/10 p-stack-md border-dashed rounded-[24px] mt-stack-md glass-panel">
 <div class="flex justify-between items-center">
 <div>
 <p class="font-label-md text-on-surface-variant uppercase tracking-wider text-[12px]">SLOT 5 • 06:00 PM</p>
@@ -296,14 +357,13 @@
 </div>
 </div>
 </div></section>
-
 <!-- History Summary -->
 <section class="mb-stack-lg">
 <div class="flex justify-between items-center mb-stack-sm mt-stack-md">
 <h3 class="font-title-lg text-title-lg text-on-surface">Previous Days</h3>
 <span class="font-label-md text-label-md text-primary cursor-pointer hover:text-primary-container transition-colors">View All</span>
 </div>
-<div class="rounded-xl overflow-hidden glass-panel"><!-- 23-Jun-2026 -->
+<div class="rounded-xl border border-white/10 shadow-[0_1px_3px_rgba(0,0,0,0.2)] overflow-hidden glass-panel"><!-- 23-Jun-2026 -->
 <div class="history-card flex justify-between items-center p-stack-md border-b border-white/10 cursor-pointer hover:bg-white/5 transition-all active:scale-[0.98]">
 <div>
 <p class="font-label-md text-label-md font-medium text-on-surface">23-Jun-2026 , Tuesday</p>
@@ -355,9 +415,8 @@
 </div></div>
 </section>
 </main>
-
 <!-- BottomNavBar (From JSON) -->
-<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 shadow-lg rounded-t-xl glass-panel-strong !border-b-0 !border-x-0">
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 shadow-lg rounded-t-xl glass-panel-strong border-t border-white/10 !border-x-0 !border-b-0">
 <div class="flex flex-col items-center justify-center text-on-surface-variant px-6 py-1 hover:bg-white/10 rounded-lg active:scale-90 transition-all duration-150 cursor-pointer">
 <span class="material-symbols-outlined">alarm_on</span>
 <span class="font-label-md text-label-md mt-1">Clock In</span>
@@ -371,13 +430,12 @@
 <span class="font-label-md text-label-md mt-1">Profile</span>
 </div>
 </nav>
-
 <!-- Date Filter Modal -->
 <div class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-xl px-gutter hidden" id="date-filter-modal">
-<div class="w-full max-w-[400px] rounded-[24px] shadow-2xl p-gutter flex flex-col gap-stack-md glass-panel-strong" id="date-filter-card">
+<div class="w-full max-w-[400px] rounded-[24px] shadow-2xl border border-white/10 p-gutter flex flex-col gap-stack-md glass-panel-strong" id="date-filter-card">
 <div class="flex justify-between items-center mb-stack-sm">
 <h3 class="font-headline-md text-headline-md text-on-surface">Filter Records</h3>
-<span class="material-symbols-outlined text-on-surface-variant cursor-pointer active:scale-90 p-1 bg-white/5 border border-white/10 rounded-full hover:text-on-surface hover:bg-white/10" id="close-modal-btn">close</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer active:scale-90 p-1 bg-white/5 rounded-full hover:text-on-surface hover:bg-white/10" id="close-modal-btn">close</span>
 </div>
 <div class="flex flex-col gap-stack-sm">
 <label class="font-label-md text-label-md text-on-surface-variant">From Date</label>
@@ -393,21 +451,19 @@
 <input class="w-full bg-transparent border-none p-0 text-body-md font-body-md text-on-surface focus:ring-0 color-scheme-dark" type="date" value="2024-11-14">
 </div>
 </div>
-<div class="flex gap-stack-md mt-stack-md"><button class="flex-1 py-3 px-6 rounded-full border border-white/10 font-label-md text-label-md text-on-surface-variant bg-white/5 hover:bg-white/10 active:scale-95 transition-all" id="cancel-filter-btn">Cancel</button><button class="flex-1 py-3 px-6 rounded-full bg-primary font-label-md text-label-md text-[#080a0f] hover:opacity-90 active:scale-95 transition-all shadow-md neon-glow-primary">Search</button></div>
+<div class="flex gap-stack-md mt-stack-md"><button class="flex-1 py-3 px-6 rounded-full border border-white/10 font-label-md text-label-md text-on-surface-variant bg-white/5 hover:bg-white/10 active:scale-95 transition-all" id="cancel-filter-btn">Cancel</button><button class="flex-1 py-3 px-6 rounded-full bg-primary font-label-md text-label-md text-[#0f1115] hover:opacity-90 active:scale-95 transition-all shadow-md neon-glow-primary">Search</button></div>
 </div>
 </div>
-
 <!-- Image Modal -->
 <div class="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-2xl px-gutter hidden" id="image-modal">
-<div class="relative max-w-sm w-full rounded-xl p-stack-md shadow-2xl flex flex-col items-center scale-95 glass-panel-strong" id="image-modal-card">
+<div class="relative max-w-sm w-full rounded-xl p-stack-md shadow-2xl flex flex-col items-center border border-white/10 scale-95 glass-panel-strong" id="image-modal-card">
 <button class="absolute -top-12 right-0 text-on-surface cursor-pointer active:scale-90 p-2 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-colors border border-white/20" id="close-image-modal-btn">
 <span class="material-symbols-outlined">close</span>
 </button>
-<img alt="Captured Check-in Image" class="w-full h-auto rounded-lg border border-white/20 shadow-sm object-cover aspect-square" id="modal-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4aR62S-kQC8yQ2E9FT7tWYHvst9cvsIoqi1PkGoq0w5FkD-8aTxCzZK06oLr3tHKTupVPDIf_pgPJ-Dz5i8KZvJtV7bbkA-fBAI_YpTeb1IImlENq8TxqVA6qHP3WYur1XMcXjOrl1phhp95YOlXnFlxQFA9-7qdxuFtzsWR0Fkn4Iu46IdV6f6oZdSF2BLc8MWwUiQRddlB4VJiiqJ9IkHES8Bt6hsd06Sqdj_sP6vnRNZaalfo04YnjVQ4vssPF6VeUam4-z9E">
-<p class="mt-stack-sm font-label-md text-white/50 w-full text-center uppercase tracking-wider text-[12px]">Captured Photo</p>
+<img alt="Captured Check-in Image" class="w-full h-auto rounded-lg border border-white/10 shadow-sm object-cover aspect-square" id="modal-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4aR62S-kQC8yQ2E9FT7tWYHvst9cvsIoqi1PkGoq0w5FkD-8aTxCzZK06oLr3tHKTupVPDIf_pgPJ-Dz5i8KZvJtV7bbkA-fBAI_YpTeb1IImlENq8TxqVA6qHP3WYur1XMcXjOrl1phhp95YOlXnFlxQFA9-7qdxuFtzsWR0Fkn4Iu46IdV6f6oZdSF2BLc8MWwUiQRddlB4VJiiqJ9IkHES8Bt6hsd06Sqdj_sP6vnRNZaalfo04YnjVQ4vssPF6VeUam4-z9E">
+<p class="mt-stack-sm font-label-md text-on-surface-variant w-full text-center uppercase tracking-wider text-[12px]">Captured Photo</p>
 </div>
 </div>
-
 <script>
         // Modal Logic
         const modal = document.getElementById('date-filter-modal');
@@ -481,5 +537,4 @@
             });
         });
     </script>
-
 </body></html>
